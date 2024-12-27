@@ -1,0 +1,228 @@
+*{
+    font-family: "Ubuntu", sans-serif;
+}
+body{
+    background-color: #272b30;
+    overflow: hidden;
+}
+
+.navbar .nav-link {
+    color: white;
+}
+.navbar{
+    position: fixed;
+    top: 0px;
+    background-color: #272b30;
+    z-index: 99999999;
+
+}
+.logo{
+    cursor: pointer;
+}
+.navbar .nav-link.active {
+    color: #09c;
+}
+.btn-free {
+    font-size: 0.8rem;
+    width: 40px;
+    height: 30px;
+    border: none;
+    background-color: #272b30;
+    color: #aaaaaa;
+    transition-duration: 0.6s;
+}
+.btn-free:hover{
+    background-color: #aaaaaa;
+    color: #272b30;
+}
+.container{
+    background-color: #32383e;
+    overflow: hidden;
+
+}
+.ptext{
+    color: #aaaaaa;
+    font-weight: 300;
+    line-height: 1.2;
+    white-space: nowrap; /* Prevents the text from wrapping to a new line */
+    overflow: hidden; /* Hides the overflow text */
+    text-overflow: ellipsis; /* Adds "..." at the end of the truncated text */
+    max-width: 100%; /* Ensures the title fits within its container */
+}
+h2{
+    color: #aaaaaa;
+
+}
+.footerSpan{
+    color: #aaaaaa;
+    cursor: pointer;
+    transition-duration: 0.6s;
+}
+.footerSpan:hover{
+    color: white;
+}
+.icon{
+    color: #aaaaaa;
+    transition-duration: 0.6s;
+}
+.icon:hover{
+    color: white;
+    cursor: pointer;
+}
+.backIcon{
+    background-color: #aaaaaa;
+    width: 15px;
+    height: 15px;
+    transition-duration: 0.6s;
+    cursor: pointer;
+}
+.backIcon:hover{
+    background-color: #ffffff;
+}
+.icon-2{
+    color: #272b30;
+    font-size: 0.6rem;
+}
+
+.imgg{
+    cursor: pointer;
+    transition-duration: 0.6s;
+}
+.imgg:hover{
+    transform: scale(1.08);
+}
+.textmuted{
+    color: #7a8288;
+}
+.top{
+    padding-top: 61px;
+}
+footer{
+    background-color: #1c1e22;
+}
+.footerSpan-2{
+    color: #aaaaaa;
+    font-size: 0.7rem;
+}
+.socialIcons {
+    color: #aaaaaa;
+    transition-duration: 0.6s;
+    cursor: pointer;
+}
+.socialIcons:hover{
+    color: white;
+}
+.line{
+    width: 100%;
+    height: 0.2%;
+    background-color: #aaaaaa1c;
+
+}
+.Alert{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #272b30;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999999999;
+    display: none;
+}
+.screenLoading{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #272b30;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999999;
+}
+.details{
+    color: #aaaaaa;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+.exit{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #aaaaaa;
+    transition-duration: 0.6s;
+    cursor: pointer;
+}
+.exit:hover{
+    color: white;
+}
+.pointer{
+    cursor: pointer;
+}
+.navbar-toggler {
+    border: none;
+    padding: 8px; 
+    background-color: transparent; 
+}
+.navbar-toggler:hover,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    background-color: transparent; 
+    border: none; 
+    outline: none; 
+    box-shadow: none;
+}
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D"http://www.w3.org/2000/svg" viewBox%3D"0 0 448 512"%3E%3Cpath fill%3D"%23ffffff" d%3D"M0 96h448v64H0zm0 128h448v64H0zm0 128h448v64H0z"%3E%3C/path%3E%3C/svg%3E');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+}
+#navbarSupportedContent{
+    text-align: start;
+    padding-left: 8px;
+}
+.title {
+    white-space: nowrap; /* Prevents the text from wrapping to a new line */
+    overflow: hidden; /* Hides the overflow text */
+    text-overflow: ellipsis; /* Adds "..." at the end of the truncated text */
+    max-width: 100%; /* Ensures the title fits within its container */
+}
+.loader {
+    position: relative;
+    width: 48px;
+    height: 48px;
+  }
+  .loader:before,
+  .loader:after {
+    content:"";
+    display: block;
+    border: 32px solid transparent;
+    border-top-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: weld-rotate 2s infinite ease-in;
+  }
+  .loader:before {
+    border-color: transparent  transparent transparent #4899eb
+
+
+
+    ;
+    animation-delay: 0.5s;
+  }
+  @keyframes weld-rotate {
+    0% , 25% {transform: rotate(0deg)}
+    50% , 75% {transform: rotate(180deg)}
+    100% {transform: rotate(360deg)}
+  }
